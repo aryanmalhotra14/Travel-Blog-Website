@@ -1,0 +1,226 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Lora', serif;
+}
+body{
+    line-height: 1.4;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+}
+
+header{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(images/india.jpeg) no-repeat fixed ;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+.navbar{
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    padding-bottom: 15px;
+}
+#Name{
+    color: #fff;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.navbar-nav{
+    padding: 5px 0 5px 0;
+    text-align: center;
+}
+.navbar-nav a{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 2px 1px;
+    letter-spacing: 3px;
+}
+.navbar-nav a:hover{
+    color: #D2D2D2;
+}
+.banner{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+.banner-title{
+    font-size: 3rem;
+    line-height: 1.2;
+}
+.banner p{
+    padding: 1rem 0 2rem 0;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-weight: 300;
+    word-spacing: 2px;
+}
+
+.nature{
+    margin: 10px;
+    padding: 50px 0;
+}
+.title{
+    text-align: center;
+    padding: 5px 0;
+}
+.title h2{
+    font-size: 40px;;
+}
+.title p{
+    text-transform: uppercase;
+    padding: 0 5px 0;
+    margin-bottom: 50px;
+}
+.nature-content{
+    margin: 5px 0;
+}
+.nature-item{
+    margin: 5px 0;
+}
+.nature-img{
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.nature-title{
+  margin: 2.2rem 0;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+}
+.nature-title a{
+    cursor: pointer;
+    color: black;
+    padding: 1rem 0;
+    font-size: 1.65rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.nature-title span{
+  padding-bottom: 20px;
+}
+
+.city{
+    background: #f9f9f9;
+    padding: 4.5rem 0;
+}
+.city-content{
+    margin: 2rem 0;
+}
+.city-img{
+    position: relative;
+}
+.city-img span{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 0.3rem 0.6rem;
+}
+.city-text{
+    margin: 2.2rem 0;
+    padding: 0 1rem;
+}
+.city-text h2{
+    color: black;
+    padding: 1rem 0;
+    font-size: 1.65rem;
+    font-weight: 500;
+}
+img{
+  height: 400px;
+}
+span{
+  display: block;
+  text-align: left;
+  font-weight: 300;
+}
+#footer{
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 540px){
+    .navbar-nav a{
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+    .banner-title{
+        font-size: 5rem;
+    }
+    .banner form{
+        margin-top: 1.4rem;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+ @media screen and (min-width: 768px){
+    .navbar .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .search-input{
+        padding: 0.8rem 0;
+    }
+    .nature-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .nature-item{
+        margin: 0;
+    }
+    .city-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .city-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .about-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .nature-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
